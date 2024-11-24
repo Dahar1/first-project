@@ -119,7 +119,6 @@ class ItemListCreate(APIView):
 
 class LoginView(APIView):
     def post(self, request):
-        # Get username and password from the request
         username = request.data.get("username")
         password = request.data.get("password")
 
